@@ -10,8 +10,8 @@ var site = new Schema({
 	name: String,
 	url: String,
 	license: {
-		type: String,
-		info: String
+		tp: String,
+		inf: String
 	},
 	meta: {
 		admin: {
@@ -22,4 +22,6 @@ var site = new Schema({
 	},
 	status: String,
 	category: String
-});
+},{collection: 'site'} );
+
+module.exports = mongoose.model('site', site);
