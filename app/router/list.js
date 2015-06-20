@@ -5,20 +5,24 @@ var m_site = require('../models/m_site');
 
 routerSearch.
 	get('/search/name/:name', function(req, res) {
-		var name = req.params.name;
-		res.send(name);
+		var searchName = req.params.name;
+		m_site.find({'name':new RegExp(searchName, "i")}, function(err, data) {
+			if (err) {console.log(err);}
+			console.log(data);
+			res.send(data);
+		});
 	});
-
 
 routerSearch.
 	get('/search/url/:url', function(req, res) {
 		var url = req.params.url;
-		res.send(url);
+		console.log(url);
 	});
 
 routerSearch.
 	get('/search/category/:category', function(req, res) {
 		var category = req.params.category;
+		console.log(category);
 		res.send(category);
 	});
 
