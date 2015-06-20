@@ -1,8 +1,16 @@
+/**
+ * index.js
+ *
+ * 
+ */
+
 var express = require('express');
 var app = express();
-var mongoose = require('mongoose');
+var routeManager = require('./app/router/routeManager');
 
 var port = 8080;
-var ip = '0.0.0.0'; // MUITO IMPORTANTE
+var ip = '0.0.0.0';
+
+routeManager(app);
 
 app.listen(port, ip);
