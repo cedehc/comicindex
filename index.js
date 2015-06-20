@@ -24,7 +24,7 @@ insertData();
 app.listen(port, ip);
 
 function insertData () {
-	var lol1 = new site({
+	var lol = new site({
 	name: 'Willtirando',
 	url: 'http://willtirando.com.br/',
 	license: { 
