@@ -8,7 +8,11 @@ var Schema = mongoose.Schema;
 
 var site = new Schema({
 	name: String,
-	url: String,
+	url: {
+		type: String,
+		unique: true,
+		index: true
+	},
 	license: {
 		tp: String,
 		inf: String
