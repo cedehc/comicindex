@@ -5,10 +5,10 @@
  *
  */
 
-var site = require('./site');
+var list = require('./list');
 
 module.exports = function (app) {
 
-	app.use('/api/v1', site);
+	app.use('/api/v1', list);
 
 };
