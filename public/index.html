@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='comicform'>
 <head>
 	<title>Comicindex</title>
 </head>
 <body>
 	<h1 class="header">Form</h1>
-	<form>
-		<label>Name</label>
-		<input type="text">
-		<br />
-		<label>URL</label>
-		<input type="text">
-		<br />
-		<h3>License</h3>
-		<label>Type</label>
-		<input type="text">
-		<br />
-		<label>Info</label>
-		<input type="text">
-		<br />
-		<h3>Meta</h3>
-		<p>Admin:</p>
-		<label>Name</label>
-		<input type="text">
-		<label>email</label>
-		<input type="text">
-		<br >
-		<p>Rev</p>
-		<input type="number">
-		<br />
-		<label>Status</label>
-		<select>
-			<option value=""></option>
-			<option value="online">Online</option>
-			<option value="offline">Offline</option>
-			<option value="discon">Discontinued</option>
-		</select>
-		<br />
-		<label>Category</label>
-		<input type="text"</option>
+	<div ng-controller="formController">
+		<form>
+			<label>Name</label>
+			<input type="text">
+			<br />
+			<label>URL</label>
+			<input type="text">
+			<br />
+			<h3>License</h3>
+			<label>Type</label>
+			<input type="text">
+			<br />
+			<label>Info</label>
+			<input type="text">
+			<br />
+			<h3>Meta</h3>
+			<p>Admin:</p>
+			<label>Name</label>
+			<input type="text">
+			<label>email</label>
+			<input type="text">
+			<br >
+			<p>Rev</p>
+			<input type="number">
+			<br />
+			<label>Status</label>
+			<select>
+				<option value=""></option>
+				<option value="online">Online</option>
+				<option value="offline">Offline</option>
+				<option value="discon">Discontinued</option>
+			</select>
+			<br />
+			<label>Category</label>
+			<input type="text"</option>
+			<button type="submit">Ok</button>
+		</form>
+	</div>
 
-	</form>
+	<script src="/js/angular.js"></script>
+	<script src="/js/angular-resource.js"></script>
 </body>
 </html>
