@@ -137,4 +137,25 @@ console.log(JSON.stringify(lol, null, 2));
 		if (err) {console.error(err);}
 		console.log(lol);
 	});
+
+	lol2.save(function(err) {
+		if (err) {console.error(err);}
+		console.log(lol2);
+	});
+	lol3.save(function(err) {
+		if (err) {console.error(err);}
+		console.log(lol3);
+	});
+	lol4.save(function(err) {
+		if (err) {console.error(err);}
+		console.log(lol4);
+	});
+	lol5.save(function(err) {
+		if (err) {console.error(err);}
+		console.log(lol5);
+	});
+	lol6.save(function(err) {
+		if (err) {console.error(err);}
+		console.log(lol6);
+	});
 }
